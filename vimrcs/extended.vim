@@ -47,6 +47,36 @@ endif
 map <leader>e :e! ~/.vim_runtime/my_configs.vim<cr>
 autocmd! bufwritepost vimrc source ~/.vim_runtime/my_configs.vim
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Some convenient shorcuts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
+
+map ; :
+imap jj <Esc>
+" Easier moving in tabs and windows
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-L> <C-W>l<C-W>_
+map <C-H> <C-W>h<C-W>_
+
+" visual shifting (does not exit Visual mode)
+vnoremap < <gv
+vnoremap > >gv
+
+" Shortcuts
+" Change Working Directory to that of the current file
+cmap cwd lcd %:p:h
+cmap cd. lcd %:p:h
+
+" Stupid shift key fixes
+cmap W w
+cmap WQ wq
+cmap wQ wq
+cmap Q q
+cmap Tabe tabe
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Turn persistent undo on 
@@ -147,10 +177,11 @@ func! CurrentFileDir(cmd)
 endfunc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
-" Pymode Shits
+" => Pymode Shits
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 let g:pymode_trim_whitespace = 1
 let g:pymode_folding = 0
 let g:pymode_doc = 0
 let g:pymode_rope_complete_on_dot = 0
+
 

@@ -1,3 +1,14 @@
+    asda    ,V
+set listchars=tab:>.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace,v
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""",v
+    " Stupid shift key fixes    cmap W w    cmap WQ wq    cmap wQ wq    cmap Q q    cmap Tabe tabe,v
+    " Shortcuts    " Change Working Directory to that of the current file    cmap cwd lcd %:p:h    cmap cd. lcd %:p:h,v
+    " visual shifting (does not exit Visual mode)    vnoremap < <gv    vnoremap > >gv,v
+nnoremap ; :,V
+ " Easier moving in tabs and windows    map <C-J> <C-W>j<C-W>_    map <C-K> <C-W>k<C-W>_    map <C-L> <C-W>l<C-W>_    map <C-H> <C-W>h<C-W>_,v
+Source\ Code\ Pro:h15,Menlo:h15,v
+def is_even(n):    return not is_odd(n),v
+PH,v
 ,V
 condition,v
 fname,v
