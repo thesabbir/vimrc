@@ -145,3 +145,12 @@ endfunc
 func! CurrentFileDir(cmd)
     return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pymode Shits
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:pymode_trim_whitespace = 1
+let g:pymode_folding = 0
+let g:pymode_doc = 0
+let g:pymode_rope_complete_on_dot = 0
+

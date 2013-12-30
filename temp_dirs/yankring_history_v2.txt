@@ -1,5 +1,21 @@
-RED1iM1-2:.vim_runtime Madgenius$ cd ~/Codes/django/,v
+,V
+condition,v
+fname,v
+<!DOCTYPE html>,V
+</table>,V
+    </thead>,V
+        </tr>,V
+            <td></td>,V
+        <tr>,V
+    <thead>,V
+<table>,V
+<html lang="en"><head>    <meta charset="UTF-8">    <title></title></head><body>    </body></html>,v
+    ,V
+from crispy_forms.bootstrap import FormActions,V
 PATH="/Applications/Postgres93.app/Contents/MacOS/bin:${PATH}",V
+text/atdtool.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/twig/twiglint.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/typescript/tsc.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/vala/valac.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/verilog/verilator.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/vhdl/ghdl.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/xhtml/tidy.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/xml/xmllint.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/xslt/xmllint.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/yacc/bison.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/yaml/jsyaml.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/yaml/yamlxs.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/z80/z80syntaxchecker.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/zpt/zptlint.vim create mode 100644 sources_non_forked/syntastic/syntax_checkers/zsh/zsh.vim delete mode 160000 sources_non_forked/tagbar create mode 100644 sources_non_forked/tagbar/README.md create mode 100644 sources_non_forked/tagbar/autoload/tagbar.vim create mode 100644 sources_non_forked/tagbar/doc/tagbar.txt create mode 100644 sources_non_forked/tagbar/doc/tags create mode 100644 sources_non_forked/tagbar/plugin/tagbar.vim create mode 100644 sources_non_forked/tagbar/syntax/tagbar.vim delete mode 160000 sources_non_forked/vim-easymotion create mode 100644 sources_non_forked/vim-easymotion/README.md create mode 100644 sources_non_forked/vim-easymotion/autoload/EasyMotion.vim create mode 100644 sources_non_forked/vim-easymotion/doc/easymotion.txt create mode 100644 sources_non_forked/vim-easymotion/doc/tags create mode 100644 sources_non_forked/vim-easymotion/plugin/EasyMotion.vim delete mode 160000 sources_non_forked/vim-eunuch create mode 100644 sources_non_forked/vim-eunuch/README.markdown,v
+te,v
+RED1iM1-2:.vim_runtime Madgenius$ cd ~/Codes/django/,v
 git clone git://github.com/majutsushi/tagbar,v
 https://github.com/ervandew/supertab,v
 https://github.com/scrooloose/syntastic,v
