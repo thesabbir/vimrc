@@ -1,0 +1,9 @@
+RED1iM1-2:.vim_runtime Madgenius$ cd ~/Codes/django/,v
+PATH="/Applications/Postgres93.app/Contents/MacOS/bin:${PATH}",V
+git clone git://github.com/majutsushi/tagbar,v
+https://github.com/ervandew/supertab,v
+https://github.com/scrooloose/syntastic,v
+git clone git://github.com/tpope/vim-eunuch.git,v
+http://github.com/Raimondi/delimitMate/issues,v
+https://github.com/scrooloose/nerdcommenter,v
+re is a one-liner:    echo export PATH="/usr/local,v
