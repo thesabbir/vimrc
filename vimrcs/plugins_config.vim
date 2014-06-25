@@ -63,7 +63,7 @@ map <leader>j :PeepOpen<cr>
 """"""""""""""""""""""""""""""
 " Enable all functions in all modes
 let g:user_zen_mode='a'
-
+let g:user_zen_leader_key='<c-y>'
 
 """"""""""""""""""""""""""""""
 " => snipMate (beside <TAB> support <CTRL-j>)
