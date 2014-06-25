@@ -1,3 +1,18 @@
+        ,V
+    if whatever:,V
+for x in range(10):,V
+condition,v
+items,v
+item,v
+func main() {,V
+import "fmt",V
+,V
+},V
+	},V
+		,V
+	if x== {,V
+/* condition */,v
+	if,V
     go f(1000),V
 export $GOPATH,V
     print splitted_data,V
@@ -11,7 +26,6 @@ edpan,v
         Scan,V
     <button id="startScan" class="button button-positive" ng-click="scan()">,V
   <div ng-controller="MainController">,V
-,V
   </body>,V
   <body ng-app="starter">,V
 <body ng-app="starter">,V
@@ -84,17 +98,3 @@ https://mafinarkhan.vendhq.com/,v
 e,v
         'rest_framework.renderers.BrowsableAPIRenderer',,v
 ,v
-    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',,V
-    'oscar.apps.basket.middleware.BasketMiddleware',,V
-\,v
-configobj==4.7.2,V
-    fout.write(sanitized),V
-import pprint,V
-        ,V
-    for (idx, value) in enumerate(p2):,V
-    cache = {},V
-    p3 = [],V
-    # Now take care of the 'Marchi di vendita' situation.,V
-'Marchi di vendita',v
- 'CATALOGO ESPOSITORI / EXHIBITORS CATALOGUE',,v
-New Fair Grounds Rho,V
