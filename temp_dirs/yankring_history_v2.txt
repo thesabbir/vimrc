@@ -1,3 +1,18 @@
+http://www.artima.com/scalazine/articles/twitter_on_scala.html,v
+বালের মাথা ব্যথা। চিন্তা করতে কষ্ট হইতাছে :(,v
+    load_products(),V
+var i = 0while (i < args.length) {    println(args(i))    i += 1},V
+if __name__ == "__main__":    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bot_server.settings.local")    from django.core.management import execute_from_command_line,v
+'SS TEE, 316 GRADE, 40 SCH (WELDED),v
+println(args(0)),V
+    url(r'', 'app.views.under_construction'),,v
+http://githut.info/,v
+https://github.com/howtocode-com-bd/django.howtocode.com.bd.git,v
+http://bitbucket.org/chris1610/satchmo/,v
+<td>{{ i.identifier }}</td>,v
+    'app',,v
+apnarticket,v
+https://github.com/code-shoily/vimrc.git,v
         ,V
     if whatever:,V
 for x in range(10):,V
@@ -83,18 +98,3 @@ bin/,V
                 'General': [,V
                     'humanize': 'Remarks', 'type': 'text', 'name': 'remarks'}], 'fk_fields': [], 'map_fields': None, 'form_fields': {,V
                     'humanize': 'Assigned', 'type': 'date', 'name': 'assigned'}, {,V
-                    'humanize': 'Remarks', 'type': 'text', 'name': 'remarks'}], 'cover_pic': None, 'order_fields': [,V
-            'image_fields': [], 'primary_pic': None, 'file_fields': [], 'search_fields': [,V
-                    'null': True, 'name': 'remarks', 'type': 'TextField', 'blank': True, 'help_text': None, 'unique': False, 'verbose_name': 'Remarks', 'db_index': None}], 'table': None, 'underscored': 'task', 'plural': 'Tasks', 'slug': 'task'}, 'crud': {,V
-                    'null': True, 'name': 'assigned', 'type': 'DateField', 'blank': True, 'help_text': None, 'unique': False, 'verbose_name': 'Assigned', 'db_index': None}, {,V
-                    'null': True, 'name': 'end', 'type': 'DatetimeField', 'blank': True, 'help_text': None, 'unique': False, 'verbose_name': 'End', 'db_index': None}, {,V
-                    'null': True, 'name': 'start', 'type': 'DatetimeField', 'blank': True, 'help_text': None, 'unique': False, 'verbose_name': 'Start', 'db_index': None}, {,V
-                    'null': True, 'name': 'name', 'type': 'CharField', 'max_length': 255, 'blank': True, 'help_text': None, 'unique': False, 'verbose_name': 'Name', 'db_index': None}, {,V
-            'name': 'Task', 'humanized': 'Task', 'fields': [,V
-        'model': {,V
-GOODBYE,v
-http://www.ampps.com/,v
-https://mafinarkhan.vendhq.com/,v
-e,v
-        'rest_framework.renderers.BrowsableAPIRenderer',,v
-,v
