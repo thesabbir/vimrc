@@ -184,3 +184,9 @@ let g:pymode_folding = 0
 let g:pymode_doc = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_lint = 0
+
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces

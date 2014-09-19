@@ -1,3 +1,39 @@
+(defn bubble-sort  "The easiest and naivest of them all",V
+,V
+(defn sapphire [] "HELLO"),V
+(sapphire),v
+if (empty? lst') output        (recur (rest lst') (do-insertion (first lst')                                           output                                          f)),v
+(if (empty? lst') output        (recur (rest lst') (do-insertion (first lst')                                           output                                          f))),v
+(#(* % %) 2),v
+(+ 1 1),v
+(+ 2 2),V
+    \ ['red',         'firebrick3'],,V
+https://github.com/tpope/vim-fireplace.git,v
+    \ ],V
+    \ ['darkred',     'DarkOrchid3'],,V
+    \ ['darkcyan',    'SeaGreen3'],,V
+    \ ['darkgreen',   'RoyalBlue3'],,V
+    \ ['Darkblue',    'firebrick3'],,V
+    \ ['black',       'SeaGreen3'],,V
+    \ ['gray',        'RoyalBlue3'],,V
+    \ ['brown',       'firebrick3'],,V
+    \ ['darkmagenta', 'DarkOrchid3'],,V
+    \ ['darkred',     'SeaGreen3'],,V
+    \ ['darkcyan',    'RoyalBlue3'],,V
+    \ ['darkgreen',   'firebrick3'],,V
+    \ ['darkgray',    'DarkOrchid3'],,V
+    \ ['Darkblue',    'SeaGreen3'],,V
+    \ ['brown',       'RoyalBlue3'],,V
+let g:rbpt_colorpairs = [,V
+au VimEnter * RainbowParenthesesToggleau Syntax * RainbowParenthesesLoadRoundau Syntax * RainbowParenthesesLoadSquareau Syntax * RainbowParenthesesLoadBraces,v
+(defn function "doc-string" [arg-list]  (for [x 10]    for)),V
+let g:rbpt_colorpairs = [    \ ['brown',       'RoyalBlue3'],    \ ['Darkblue',    'SeaGreen3'],    \ ['darkgray',    'DarkOrchid3'],    \ ['darkgreen',   'firebrick3'],    \ ['darkcyan',    'RoyalBlue3'],    \ ['darkred',     'SeaGreen3'],    \ ['darkmagenta', 'DarkOrchid3'],    \ ['brown',       'firebrick3'],    \ ['gray',        'RoyalBlue3'],    \ ['black',       'SeaGreen3'],    \ ['darkmagenta', 'DarkOrchid3'],    \ ['Darkblue',    'firebrick3'],    \ ['darkgreen',   'RoyalBlue3'],    \ ['darkcyan',    'SeaGreen3'],    \ ['darkred',     'DarkOrchid3'],    \ ['red',         'firebrick3'],    \ ],v
+name,v
+https://github.com/tpope/vim-leiningen.git,v
+  ,V
+https://github.com/kien/rainbow_parentheses.vim.git,v
+Me to Arsalan: Who's cooler mom or dad?Arsalan: (Stares blankly),v
+https://github.com/guns/vim-clojure-static.git,v
 http://www.artima.com/scalazine/articles/twitter_on_scala.html,v
 বালের মাথা ব্যথা। চিন্তা করতে কষ্ট হইতাছে :(,v
     load_products(),V
@@ -21,7 +57,6 @@ items,v
 item,v
 func main() {,V
 import "fmt",V
-,V
 },V
 	},V
 		,V
@@ -33,7 +68,6 @@ export $GOPATH,V
     print splitted_data,V
 l,v
     Location.objects.create(title=i[0]),V
-name,v
 edpan,v
   </div>,V
     <div id="results" ng-bind="results" />,V
@@ -64,37 +98,3 @@ I,v
 D,v
 _,v
 E,v
-S,v
-A,v
-B,v
-(,v
-os.path.join,v
-ctx["places"] = simplejson.dumps([i.name for i in Place.objects.all()]),v
-                <option value="volvo">                    Cox's Bazar                </option>,v
-#,v
-academiabasedb.sqlite3docsedpanmanage.pyscriptsstaticstatic_mediatemptemplatestest.jsontestapptrispace,v
-domains = ,v
-php -S localhost:8000,v
-var/,V
-sdist/,V
-parts/,V
-lib64/,V
-lib/,V
-eggs/,V
-dist/,V
-develop-eggs/,V
-build/,V
-bin/,V
-                    'humanize': 'End', 'type': 'DateTime', 'name': 'end'}, {,V
-                    'humanize': 'Start', 'type': 'DateTime', 'name': 'start'}, {,V
-                    'humanize': 'Name', 'type': 'char', 'name': 'name'}, {,V
-                {,V
-                        'humanize': 'Remarks', 'type': 'text', 'name': 'remarks'}]}, 'list_fields': [,V
-                        'humanize': 'Assigned', 'type': 'date', 'name': 'assigned'}, {,V
-                        'humanize': 'End', 'type': 'DateTime', 'name': 'end'}, {,V
-                        'humanize': 'Start', 'type': 'DateTime', 'name': 'start'}, {,V
-                        'humanize': 'Name', 'type': 'char', 'name': 'name'}, {,V
-                    {,V
-                'General': [,V
-                    'humanize': 'Remarks', 'type': 'text', 'name': 'remarks'}], 'fk_fields': [], 'map_fields': None, 'form_fields': {,V
-                    'humanize': 'Assigned', 'type': 'date', 'name': 'assigned'}, {,V
