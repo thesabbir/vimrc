@@ -1,4 +1,6 @@
+        ,v
 (defn bubble-sort  "The easiest and naivest of them all",V
+https://github.com/guns/vim-clojure-highlight.git,v
 ,V
 (defn sapphire [] "HELLO"),V
 (sapphire),v
@@ -96,5 +98,3 @@ os.path.join(BASE_DIR, ,v
 R,v
 I,v
 D,v
-_,v
-E,v
