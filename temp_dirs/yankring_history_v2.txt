@@ -1,7 +1,10 @@
+,V
         ,v
+   to think right now, movie time ;-)") ,v
+     ,v
+ ,v
 (defn bubble-sort  "The easiest and naivest of them all",V
 https://github.com/guns/vim-clojure-highlight.git,v
-,V
 (defn sapphire [] "HELLO"),V
 (sapphire),v
 if (empty? lst') output        (recur (rest lst') (do-insertion (first lst')                                           output                                          f)),v
@@ -93,8 +96,5 @@ academia/,V
 console,v
 ),v
 os.path.join(BASE_DIR, ,v
- ,v
 ,,v
 R,v
-I,v
-D,v
