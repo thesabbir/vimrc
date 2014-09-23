@@ -1,4 +1,28 @@
+git clone https://github.com/angular/angular-seed.git,v
+npm install generator-angular-bootstrap-less,v
+slides.com/mafinarkhan/grokking-angularjs/,v
+6687,v
+.,v
+edpan,v
+    'accounts_app',,V
+https://github.com/katrid/keops,v
+ACCOUNTS_MAX_ACCOUNT_VALUE,v
+/home/mafinar/.virtualenv/ecommerce/local/lib/python2.7/site-packages/accounts,v
+from accounts.dashboard.app import application as accounts_app,v
+ar_,v
+osc,v
+from oscar.defaults import *,V
+    (r'^dashboard/accounts/', include(accounts_app.urls)),,v
+[incanter "LATEST"]],v
+from oscar.defaults import *OSCAR_DASHBOARD_NAVIGATION.append(    {        'label': 'Accounts',        'icon': 'icon-globe',        'children': [            {                'label': 'Accounts',                'url_name': 'accounts-list',            },            {                'label': 'Transfers',                'url_name': 'transfers-list',            },            {                'label': 'Deferred income report',                'url_name': 'report-deferred-income',            },            {                'label': 'Profit/loss report',                'url_name': 'report-profit-loss',            },        ]    }),v
+from accounts import TEMPLATE_DIR as ACCOUNTS_TEMPLATE_DIRTEMPLATE_DIRS = (    ...    ACCOUNTS_TEMPLATE_DIR),v
+                 ,V
+[quil "LATEST"],v
+Django's Oscar E-Commerce framework is so difficult to Google. The results are mostly about the movie's Oscar nomination count! Both the Djangos are good with their Oscars though.,v
+label="Discoun",v
+def name(arg) = ,V
 desert,v
+https://github.com/derekwyatt/vim-scala.git,v
 ,V
         ,v
    to think right now, movie time ;-)") ,v
@@ -74,27 +98,3 @@ export $GOPATH,V
     print splitted_data,V
 l,v
     Location.objects.create(title=i[0]),V
-edpan,v
-  </div>,V
-    <div id="results" ng-bind="results" />,V
-    </button>,V
-        Scan,V
-    <button id="startScan" class="button button-positive" ng-click="scan()">,V
-  <div ng-controller="MainController">,V
-  </body>,V
-  <body ng-app="starter">,V
-<body ng-app="starter">,V
-    <div ng-controller="MainController">,V
-    </ion-pane>,V
-      </ion-content>,V
-      <ion-content>,V
-      </ion-header-bar>,V
-        <h1 class="title">Ionic Blank Starter</h1>,V
-      <ion-header-bar class="bar-stable">,V
-    <ion-pane>,V
-academia/,V
-        'rest_framework_csv.renderers.CSVRenderer',,v
-console,v
-),v
-os.path.join(BASE_DIR, ,v
-,,v
