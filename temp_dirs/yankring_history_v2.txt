@@ -1,3 +1,4 @@
+                        <a href="{% url 'btlstock-summary-items' %}?category={{ obj.pk }}"                           class="btn btn-warning"                           target="_blank">                            <i class="icon-print"></i> {% trans "Print Summary" %}                        </a>,v
 git clone https://github.com/angular/angular-seed.git,v
 npm install generator-angular-bootstrap-less,v
 slides.com/mafinarkhan/grokking-angularjs/,v
@@ -97,4 +98,3 @@ import "fmt",V
 export $GOPATH,V
     print splitted_data,V
 l,v
-    Location.objects.create(title=i[0]),V
