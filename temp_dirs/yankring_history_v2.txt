@@ -1,100 +1,100 @@
-                        <a href="{% url 'btlstock-summary-items' %}?category={{ obj.pk }}"                           class="btn btn-warning"                           target="_blank">                            <i class="icon-print"></i> {% trans "Print Summary" %}                        </a>,v
-git clone https://github.com/angular/angular-seed.git,v
-npm install generator-angular-bootstrap-less,v
-slides.com/mafinarkhan/grokking-angularjs/,v
-6687,v
-.,v
-edpan,v
-    'accounts_app',,V
-https://github.com/katrid/keops,v
-ACCOUNTS_MAX_ACCOUNT_VALUE,v
-/home/mafinar/.virtualenv/ecommerce/local/lib/python2.7/site-packages/accounts,v
-from accounts.dashboard.app import application as accounts_app,v
-ar_,v
-osc,v
-from oscar.defaults import *,V
-    (r'^dashboard/accounts/', include(accounts_app.urls)),,v
-[incanter "LATEST"]],v
-from oscar.defaults import *OSCAR_DASHBOARD_NAVIGATION.append(    {        'label': 'Accounts',        'icon': 'icon-globe',        'children': [            {                'label': 'Accounts',                'url_name': 'accounts-list',            },            {                'label': 'Transfers',                'url_name': 'transfers-list',            },            {                'label': 'Deferred income report',                'url_name': 'report-deferred-income',            },            {                'label': 'Profit/loss report',                'url_name': 'report-profit-loss',            },        ]    }),v
-from accounts import TEMPLATE_DIR as ACCOUNTS_TEMPLATE_DIRTEMPLATE_DIRS = (    ...    ACCOUNTS_TEMPLATE_DIR),v
-                 ,V
-[quil "LATEST"],v
-Django's Oscar E-Commerce framework is so difficult to Google. The results are mostly about the movie's Oscar nomination count! Both the Djangos are good with their Oscars though.,v
-label="Discoun",v
-def name(arg) = ,V
-desert,v
-https://github.com/derekwyatt/vim-scala.git,v
 ,V
-        ,v
-   to think right now, movie time ;-)") ,v
-     ,v
+https://mafinar_rashid_khan@bitbucket.org/mafinar_rashid_khan/edpan-new.git,v
+git remote add origin https://mafinar_rashid_khan@bitbucket.org/mafinar_rashid_khan/edpan-new.git,v
+    url(r'^calendar/', include('django_bootstrap_calendar.urls')),,v
+    <a data-toggle="modal"><i class="fa fa-arrow-circle-down"></i> {% trans "Export" %} PDF</a>,v
+data-toggle="modal" data-target="#export-modal-{{et.type}}",v
+<a data-toggle="modal" data-target="#export-modal-{{et.type}}"><i class="fa fa-arrow-circle-down"></i> {% trans "Export" %} {{et.name}}        </a>,v
+    date_hierarchy = 'created_at',,V
+    list_display = 'bill', 'amount_paid', 'method_of_payment',,V
+<ul class="well nav nav-pills nav-stacked nav-quickfilter hide-sm">   {% for spec in cl.quickfilter.filter_specs %}{{ spec|safe }}{% endfor %}</ul>,v
+,,v
+    exclude = 'created_by', 'updated_by',,V
+s,v
+#,v
+    show_detail_fields = ['name'],V
+                    Inline(Relationship),,V
+`,v
+        ),,V
+    relfield_style = 'fk-ajax',V
+    reversion_enable = True,V
+    show_detail_fields = 'name',,V
+    list_filter = 'bill_date',,V
+    exclude = 'created_by', 'updated_by',V
+    show_detail_fields = ['title'],V
+list_display_links = ['title'],v
+show_detail_fields = ['title'],v
+    list_display_links = ['title'],V
+    list_filter = 'bill_date',V
+    list_filter = 'bill_dat,V
+e',v
+    site_title = "EdPan",V
+    list_display = 'student', 'event', 'is_confirmed',V
+    list_display = 'title', 'start_date', 'end_date', 'category',,V
+class GlobalAdmin(object):    list_display = 'title', 'severity', 'notice_type',    search_fields = 'title', 'remarks',    list_filter = 'title', 'severity', 'notice_type', 'created_at'xadmin.site.register(Global, GlobalAdmin),v
+    list_filter = 'paid_on', 'last_date', 'status', 'bill_type', 'student',,V
+    list_filter = 'title', 'class_info', 'period_type', 'nationality',,V
+    list_display = 'date', 'class_info', 'period', 'teacher', 'room', 'course',,V
+    relfield_style = 'fk-ajax',v
+                             'office_address',,V
+                             'address',,V
+                             description="Basic access field, required",V
+    list_display = 'course', 'class_info', 'period', 'room',V
+import xadminfrom xadmin import viewsfrom models import *from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Sidefrom xadmin.plugins.inline import Inlinefrom xadmin.plugins.batch import BatchChangeAction,V
+    exclude = 'created_by', 'updated_by',v
+class StaffAdmin(object):    list_display = 'name', 'gender', 'designation', 'employee_id',    search_fields = 'name', 'email', 'designation', 'employee_id', 'phone', 'mobile',    list_filter = 'department', 'designation', 'gender', 'date_of_birth'    form_layout = (        Main(            TabHolder(                Tab('General Fields',                    Fieldset('Information',                             Row('name', 'username'),                             Row('gender', 'date_of_birth'),                             ),                    ),                Tab('Official Fields',                    Fieldset('Office Info'                             'department',                             'designation',                             'employee_id'),                    Fieldset('Contact details',                             Row('phone', 'mobile'),                             'address',                             ),                    ),            ),        ),        Side(            Fieldset('Additional Data',                     'email', 'photo', 'remarks'                     ),        )    )xadmin.site.register(Staff, StaffAdmin),v
+    form_layout = (        Main(            TabHolder(                Tab('General Fields',                    Fieldset('Information',                             'name', 'gender', 'username',                             description="Basic access field, required"                             ),                    ),                Tab('Extend Fields',                    Fieldset('Contact details',                             Row('phone', 'mobile'),                             'address',                             'office_address',                             ),                    ),            ),        ),        Side(            Fieldset('Additional Data',                     'email', 'photo', 'remarks'                     ),        )    ),V
+        verbose_name_plural = 'Ethnicities',V
+',v
+Inline,v
+                             'guarantee_date',V
+                                 'hard_disk', 'G'), AppendedText('memory', "G")),,V
+                             Row(AppendedText(,V
+                             'service_type',,V
+                             description="some comm fields, required",V
+                             Row('cpu', 'core_num'),,V
+                    Inline(MaintainLog),,V
+    form_layout = (        Main(            TabHolder(                Tab('Comm Fields',                    Fieldset('Company data',                             'name', 'idc',                             description="some comm fields, required"                             ),                    Inline(MaintainLog),                    ),                Tab('Extend Fields',                    Fieldset('Contact details',                             'service_type',                             Row('brand', 'model'),                             Row('cpu', 'core_num'),                             Row(AppendedText(                                 'hard_disk', 'G'), AppendedText('memory', "G")),                             'guarantee_date'                             ),                    ),            ),        ),        Side(            Fieldset('Status data',                     'status', 'ssh_port', 'ip'                     ),        )    ),v
+    list_filter = 'name',,V
+class EthnicityAdmin(object):,V
+class EthnicityAdmin(object):    list_display = 'name',    list_filter = 'name',    search_fields = 'name', 'description',,v
  ,v
-(defn bubble-sort  "The easiest and naivest of them all",V
-https://github.com/guns/vim-clojure-highlight.git,v
-(defn sapphire [] "HELLO"),V
-(sapphire),v
-if (empty? lst') output        (recur (rest lst') (do-insertion (first lst')                                           output                                          f)),v
-(if (empty? lst') output        (recur (rest lst') (do-insertion (first lst')                                           output                                          f))),v
-(#(* % %) 2),v
-(+ 1 1),v
-(+ 2 2),V
-    \ ['red',         'firebrick3'],,V
-https://github.com/tpope/vim-fireplace.git,v
-    \ ],V
-    \ ['darkred',     'DarkOrchid3'],,V
-    \ ['darkcyan',    'SeaGreen3'],,V
-    \ ['darkgreen',   'RoyalBlue3'],,V
-    \ ['Darkblue',    'firebrick3'],,V
-    \ ['black',       'SeaGreen3'],,V
-    \ ['gray',        'RoyalBlue3'],,V
-    \ ['brown',       'firebrick3'],,V
-    \ ['darkmagenta', 'DarkOrchid3'],,V
-    \ ['darkred',     'SeaGreen3'],,V
-    \ ['darkcyan',    'RoyalBlue3'],,V
-    \ ['darkgreen',   'firebrick3'],,V
-    \ ['darkgray',    'DarkOrchid3'],,V
-    \ ['Darkblue',    'SeaGreen3'],,V
-    \ ['brown',       'RoyalBlue3'],,V
-let g:rbpt_colorpairs = [,V
-au VimEnter * RainbowParenthesesToggleau Syntax * RainbowParenthesesLoadRoundau Syntax * RainbowParenthesesLoadSquareau Syntax * RainbowParenthesesLoadBraces,v
-(defn function "doc-string" [arg-list]  (for [x 10]    for)),V
-let g:rbpt_colorpairs = [    \ ['brown',       'RoyalBlue3'],    \ ['Darkblue',    'SeaGreen3'],    \ ['darkgray',    'DarkOrchid3'],    \ ['darkgreen',   'firebrick3'],    \ ['darkcyan',    'RoyalBlue3'],    \ ['darkred',     'SeaGreen3'],    \ ['darkmagenta', 'DarkOrchid3'],    \ ['brown',       'firebrick3'],    \ ['gray',        'RoyalBlue3'],    \ ['black',       'SeaGreen3'],    \ ['darkmagenta', 'DarkOrchid3'],    \ ['Darkblue',    'firebrick3'],    \ ['darkgreen',   'RoyalBlue3'],    \ ['darkcyan',    'SeaGreen3'],    \ ['darkred',     'DarkOrchid3'],    \ ['red',         'firebrick3'],    \ ],v
-name,v
-https://github.com/tpope/vim-leiningen.git,v
-  ,V
-https://github.com/kien/rainbow_parentheses.vim.git,v
-Me to Arsalan: Who's cooler mom or dad?Arsalan: (Stares blankly),v
-https://github.com/guns/vim-clojure-static.git,v
-http://www.artima.com/scalazine/articles/twitter_on_scala.html,v
-বালের মাথা ব্যথা। চিন্তা করতে কষ্ট হইতাছে :(,v
-    load_products(),V
-var i = 0while (i < args.length) {    println(args(i))    i += 1},V
-if __name__ == "__main__":    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bot_server.settings.local")    from django.core.management import execute_from_command_line,v
-'SS TEE, 316 GRADE, 40 SCH (WELDED),v
-println(args(0)),V
-    url(r'', 'app.views.under_construction'),,v
-http://githut.info/,v
-https://github.com/howtocode-com-bd/django.howtocode.com.bd.git,v
-http://bitbucket.org/chris1610/satchmo/,v
-<td>{{ i.identifier }}</td>,v
-    'app',,v
-apnarticket,v
-https://github.com/code-shoily/vimrc.git,v
-        ,V
-    if whatever:,V
-for x in range(10):,V
-condition,v
-items,v
-item,v
-func main() {,V
-import "fmt",V
-},V
-	},V
-		,V
-	if x== {,V
-/* condition */,v
-	if,V
-    go f(1000),V
-export $GOPATH,V
-    print splitted_data,V
-l,v
+class BaseSetting(object):    enable_themes = False    use_bootswatch = Falsexadmin.site.register(views.BaseAdminView, BaseSetting)class GlobalSetting(object):    global_search_models = [Host, IDC, Employee]    global_models_icon = {        Host: 'fa fa-laptop', IDC: 'fa fa-cloud', Employee: 'fa fa-user',    }    menu_style = 'accordion'#'accordion'xadmin.site.register(views.CommAdminView, GlobalSetting),V
+IDC, Host, MaintainLog, HostGroup, AccessRecord, Employee,v
+import xadminfrom xadmin import viewsfrom xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Sidefrom xadmin.plugins.inline import Inlinefrom xadmin.plugins.batch import BatchChangeActionfrom .models import *class SchoolAdmin(object):    list_display = ('title', 'established_on', 'email', 'site')    list_display_links = ('title',)    wizard_form_list = [        ('General Info', ('title', 'established_on', 'site')),        ('Address', ('address', 'phone', 'mobile', 'email')),        ('Setup', ('billing_date', 'bill_payment_threshold'))    ]    reversion_enable = Truexadmin.site.register(School, SchoolAdmin)class RoomAdmin(object):    list_display = 'title', 'room_type',    list_filter = 'room_type',    search_fields = 'title', 'description',    reversion_enable = Truexadmin.site.register(Room, RoomAdmin)class PeriodAdmin(object):    list_display = 'title',' start_time', 'end_time'    list_filter = 'start_time', 'end_time'    search_fields = 'title', 'description',xadmin.site.register(Period, PeriodAdmin)class SemesterAdmin(object):    list_display = 'title', 'start_date', 'end_date'    list_filter = 'start_date', 'end_date'    search_fields = 'title', 'description',xadmin.site.register(Semester, SemesterAdmin)class ClassInfoAdmin(object):    list_display = 'title', 'category', 'section'    list_filter = 'category', 'section',    search_fields = 'title', 'description'xadmin.site.register(ClassInfo, ClassInfoAdmin)class CourseAdmin(object):    list_display = 'title', 'class_info',    list_filter = 'class_info',    search_fields = 'title', 'description', 'code'xadmin.site.register(Course, CourseAdmin),V
+from models import IDC, Host, MaintainLog, HostGroup, AccessRecord, Employee,V
+    ],V
+    batch_fields = ('contact', 'name'),V
+    actions = [BatchChangeAction, ],V
+    search_fields = [],V
+),v
+class IDCAdmin(object):    list_display = ('name', 'description', 'create_time')    list_display_links = ('name',)    wizard_form_list = [        ('First\'s Form', ('name', 'description')),        ('Second Form', ('contact', 'telphone', 'address')),        ('Thread Form', ('customer_id',))    ]    search_fields = ['name']    relfield_style = 'fk-ajax'    reversion_enable = True    actions = [BatchChangeAction, ]    batch_fields = ('contact', 'name'),V
+import xadminfrom xadmin import viewsfrom models import IDC, Host, MaintainLog, HostGroup, AccessRecord, Employeefrom xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Sidefrom xadmin.plugins.inline import Inlinefrom xadmin.plugins.batch import BatchChangeAction,V
+from django.db import modelsfrom django.utils.translation import ugettext_lazy as _from django.utils.timezone import nowfrom base.models import BaseModelclass Ethnicity(models.Model):    name = models.CharField(max_length=255)    description = models.TextField(blank=True, null=True)    def __unicode__(self):        return self.nameclass Nationality(models.Model):    name = models.CharField(max_length=255)    description = models.TextField(blank=True, null=True)    def __unicode__(self):        return self.nameclass Guardian(BaseModel):    """MODEL DOCUMENTATION"""    name = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Name'))    gender = models.CharField(        blank=True,        max_length=255,        null=True,        choices=(('Male', 'Male'), ('Female', 'Female')),        default='Male'    )    username = models.ForeignKey(        blank=True,        null=True,        to='auth.User',        verbose_name=_('Username'))    phone = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Phone'))    mobile = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Mobile'))    address = models.TextField(        blank=True,        null=True,        verbose_name=_('Address'))    office_address = models.TextField(        blank=True,        null=True,        verbose_name=_('Office address'))    email = models.EmailField(blank=True, null=True, verbose_name=_('Email'))    photo = models.ImageField(blank=True, null=True, upload_to='upload/', verbose_name=_('Photo'))    remarks = models.TextField(        blank=True,        null=True,        verbose_name=_('Remarks'))    def save(self, *args, **kwargs):        return super(Guardian, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.name)    def get_absolute_url(self):        return "/student/guardian/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['name']class Student(BaseModel):    """MODEL DOCUMENTATION"""    name = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Name'))    gender = models.CharField(        blank=True,        max_length=255,        null=True,        choices=(('Male', 'Male'), ('Female', 'Female')),        default='Male'    )    username = models.ForeignKey(        blank=True,        null=True,        to='auth.User',        verbose_name=_('Username'))    date_of_birth = models.DateField(blank=True, null=True)    height = models.IntegerField(blank=True, null=True)    weight = models.IntegerField(blank=True, null=True)    phone = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Phone'))    mobile = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Mobile'))    address = models.TextField(        blank=True,        null=True,        verbose_name=_('Address'))    email = models.EmailField(blank=True, null=True, verbose_name=_('Email'))    photo = models.ImageField(blank=True, null=True, upload_to='upload/', verbose_name=_('Photo'))    remarks = models.TextField(        blank=True,        null=True,        verbose_name=_('Remarks'))    enrolled_class = models.ForeignKey(        blank=True,        null=True,        to='setup.Classinfo',        verbose_name=_('Enrolled class'))    roll_number = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Roll number'))    ethnicity = models.ForeignKey(Ethnicity, blank=True, null=True)    nationality = models.ForeignKey(Nationality, blank=True, null=True)    admission_status = models.CharField(choices=(('0', 'Regular'),                                                 ('2', 'Test Failed'),                                                 ('3', 'Left School')),                                        max_length=255,                                        blank=True,                                        null=True)    def save(self, *args, **kwargs):        return super(Student, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.name)    def get_absolute_url(self):        return "/student/student/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['name']class Relationship(BaseModel):    """MODEL DOCUMENTATION"""    student = models.ForeignKey(        blank=True,        null=True,        to='student.Student',        verbose_name=_('Student'))    guardian = models.ForeignKey(        blank=True,        null=True,        to='student.Guardian',        verbose_name=_('Guardian'))    relation = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Relation'))    def save(self, *args, **kwargs):        return super(Relationship, self).save(*args, **kwargs)    def __unicode__(self):        return "[ Implement Me ]"    def get_absolute_url(self):        return "/student/relationship/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['-pk']class Service(BaseModel):    name = models.CharField(max_length=255)    description = models.TextField(blank=True, null=True)    def __unicode__(self):        return self.nameclass StudentService(BaseModel):    service = models.ForeignKey(Service)    student = models.ForeignKey(Student),v
+from django.db import modelsfrom django.utils.translation import ugettext_lazy as _from django.utils.timezone import nowfrom base.models import BaseModelclass Department(BaseModel):    """MODEL DOCUMENTATION"""    title = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Title'))    description = models.TextField(        blank=True,        null=True,        verbose_name=_('Description'))    def save(self, *args, **kwargs):        return super(Department, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.title)    def get_absolute_url(self):        return "/administration/department/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['title']class Staff(BaseModel):    """MODEL DOCUMENTATION"""    name = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Name'))    gender = models.CharField(        blank=True,        max_length=255,        null=True,        choices=(('Male', 'Male'), ('Female', 'Female')),        default='Male'    )    designation = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Designation'))    deparment = models.ForeignKey(        blank=True,        null=True,        to='administration.Department',        verbose_name=_('Deparment'))    employee_id = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Employee id'))    date_of_birth = models.DateField(verbose_name=_('Date of birth'),            blank=True, null=True)    picture = models.ImageField(upload_to='upload/',             blank=True, null=True, verbose_name=_('Picture'))    phone = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Phone'))    mobile = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Mobile'))    email = models.EmailField(blank=True, null=True, verbose_name=_('Email'))    address = models.TextField(        blank=True,        null=True,        verbose_name=_('Address'))    remarks = models.TextField(        blank=True,        null=True,        verbose_name=_('Remarks'))    username = models.ForeignKey(        blank=True,        null=True,        to='auth.User',        verbose_name=_('Username'))    def save(self, *args, **kwargs):        return super(Staff, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.name)    def get_absolute_url(self):        return "/administration/staff/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['name']class Teacher(BaseModel):    """MODEL DOCUMENTATION"""    name = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Name'))    gender = models.CharField(        blank=True,        max_length=255,        null=True,        choices=(('Male', 'Male'), ('Female', 'Female')),        default='Male'    )    designation = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Designation'))    deparment = models.ForeignKey(        blank=True,        null=True,        to='administration.Department',        verbose_name=_('Deparment'))    employee_id = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Employee id'))    date_of_birth = models.DateField(verbose_name=_('Date of birth'),            blank=True, null=True, )    picture = models.ImageField(upload_to='upload/',             blank=True, null=True, verbose_name=_('Picture'))    phone = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Phone'))    mobile = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Mobile'))    email = models.EmailField(blank=True, null=True, verbose_name=_('Email'))    address = models.TextField(        blank=True,        null=True,        verbose_name=_('Address'))    remarks = models.TextField(        blank=True,        null=True,        verbose_name=_('Remarks'))    username = models.ForeignKey(        blank=True,        null=True,        to='auth.User',        verbose_name=_('Username'))    def save(self, *args, **kwargs):        return super(Teacher, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.name)    def get_absolute_url(self):        return "/administration/teacher/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['name'],v
+31381137530481,v
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.What is the 10 001st prime number?,v
+(,v
+The prime factors of 13195 are 5, 7, 13 and 29.What is the largest prime factor of the number 600851475143 ?,v
+  (apply *' (range 1 (inc n)))),V
+  [n] ,V
+(defn factorial ,V
+(defn factorial   [n]   (apply *' (range 1 (inc n)))),v
+    (cons 2 (lazy-seq (next-primes {} 3))))),V
+                            (+ candidate 2))))))],V
+                (lazy-seq (next-primes (next-sieve sieve candidate),V
+              (cons candidate,V
+              (recur (next-sieve sieve candidate) (+ candidate 2)),V
+            (if (sieve candidate),V
+          (next-primes [sieve candidate],V
+              (enqueue sieve candidate (+ candidate candidate)))),V
+                (enqueue candidate step)),V
+                (dissoc candidate),V
+              (-> sieve,V
+            (if-let [step (sieve candidate)],V
+          (next-sieve [sieve candidate],V
+                (assoc sieve m step)))),V
+                (recur sieve m step),V
+              (if (sieve m),V
+            (let [m (+ n step)],V
+  (letfn [(enqueue [sieve n step],V
