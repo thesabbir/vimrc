@@ -1,100 +1,100 @@
+_byobu_sourced=1 . /usr/bin/byobu-launch,V
+~/Apps/jdk1.7.0_21/bin/,v
+/usr/lib/jvm/java-7-oracle/jre,v
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*,V
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*export PATH=$PATH:~/Apps/adt-bundle-linux-x86-20140321/sdk/platform-tools:~/Apps/vert.x-2.1.2/bin;~/Apps/sbt/bin;export NODE_PATH=/usr/local/lib/node_modules;,v
+python manage.py run_gunicorn -k eventlet -w 5 -D,v
+ CRAP: ,v
 ,V
+    'app',,V
+        {% compress js %},V
+l,v
+git clone https://github.com/tangentlabs/django-oscar.git,v
+e,v
+h,v
+s,v
+z,v
+.,v
+/,v
+bindkey -v,V
+PATH="/usr/local/bin:$PATH",v
+file:///media/mafinar/MyDisc/Sobioala Digita Studio,v
+funky,v
+export VIRTUALENVWRAPPER_PYTHON=`which python`export VIRTUALENVWRAPPER_VIRTUALENV=`which virtualenv`source `which virtualenvwrapper.sh`,v
+#,v
+_byobu_sourced=1 . /usr/bin/byobu-launch[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*[[ -e /usr/local/texlive/2012/bin ]] && PATH=/usr/local/texlive/2012/bin/x86_64-linux:$PATHexport WINEPREFIX=$HOME/wine32export WINEARCH=win32export PAGER="most"export PATH=~/bin:~/.local/bin:$PATHexport JAVA_HOME=/usr/lib/jvm/java-7-oracle/jreexport WORKON_HOME=~/envsexport VIRTUALENVWRAPPER_PYTHON=/usr/bin/pythonexport VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenvexport EDITOR='vim',v
+alias node="nodejs"alias zshconfig="edit ~/.zshrc"alias ohmyzsh="edit ~/.oh-my-zsh"alias diff="colordiff"alias df="df -H"alias du="du -ch"alias ls="ls --color=auto"alias sudo="nocorrect sudo"alias update="sudo apt-get update && sudo apt-get upgrade"alias install="sudo apt-get install"alias myip="wget http://nwdesign.us/myip.php -O - -q ; echo"alias webserver="python -m SimpleHTTPServer"alias update-submodules="git submodule foreach 'git checkout master && git pull origin master'"alias glog="git log --graph --oneline --decorate --date-order --color --boundary"alias lh='ls -l .??*'alias lhd='ls -ld .??*'man() {    env \        LESS_TERMCAP_mb=$(printf "\e[1;31m") \        LESS_TERMCAP_md=$(printf "\e[1;31m") \        LESS_TERMCAP_me=$(printf "\e[0m") \        LESS_TERMCAP_se=$(printf "\e[0m") \        LESS_TERMCAP_so=$(printf "\e[1;44;33m") \        LESS_TERMCAP_ue=$(printf "\e[0m") \        LESS_TERMCAP_us=$(printf "\e[1;32m") \            man "$@"},v
+ ,v
+# You have to use npm to install npm, and that will give you the,V
+[ -e "${HOME}/.zsh_aliases" ] && source "${HOME}/.zsh_aliases"[ -e "${HOME}/.zshrc_local" ] && source "${HOME}/.zshrc_local"# You have to use npm to install npm, and that will give you the# # completion.sh file you need.# source /usr/local/lib/node_modules/npm/lib/utils/completion.sh## source "$HOME/.antigen/antigen.zsh"## antigen use oh-my-zsh## # bundles from oh-my-zsh# antigen bundle git# antigen bundle pip# antigen bundle rsync# antigen bundle python# antigen bundle virtualenvwrapper# antigen bundle node# antigen bundle npm# antigen bundle rake# antigen bundle rvm# antigen bundle bundler# antigen bundle zsh-users/zsh-completions src# antigen bundle zsh-users/zsh-syntax-highlighting# antigen bundle kennethreitz/autoenv# antigen bundle command-not-found# antigen bundle history# antigen bundle tmux# antigen bundle vundle# antigen bundle sprunge# antigen bundle fabric## antigen-theme jreese# antigen-apply## source /usr/local/bin/virtualenvwrapper.sh,V
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scriptingsource "$HOME/.antigen/antigen.zsh"antigen bundle gitantigen bundle pipantigen bundle rsyncantigen bundle pythonantigen bundle virtualenvwrapperantigen bundle nodeantigen bundle npmantigen bundle rakeantigen bundle rvmantigen bundle bundlerantigen bundle zsh-users/zsh-completions srcantigen bundle zsh-users/zsh-syntax-highlightingantigen bundle kennethreitz/autoenvantigen bundle command-not-foundantigen bundle historyantigen bundle tmuxantigen bundle vundleantigen bundle sprungeantigen bundle fabricantigen-theme jreeseantigen-apply,V
+[ -e "${HOME}/.zsh_aliases" ] && source "${HOME}/.zsh_aliases"[ -e "${HOME}/.zshrc_local" ] && source "${HOME}/.zshrc_local"# You have to use npm to install npm, and that will give you the# completion.sh file you need.source /usr/local/lib/node_modules/npm/lib/utils/completion.shsource "$HOME/.antigen/antigen.zsh"antigen use oh-my-zsh# bundles from oh-my-zshantigen bundle gitantigen bundle pipantigen bundle rsyncantigen bundle pythonantigen bundle virtualenvwrapperantigen bundle nodeantigen bundle npmantigen bundle rakeantigen bundle rvmantigen bundle bundlerantigen bundle zsh-users/zsh-completions srcantigen bundle zsh-users/zsh-syntax-highlightingantigen bundle kennethreitz/autoenvantigen bundle command-not-foundantigen bundle historyantigen bundle tmuxantigen bundle vundleantigen bundle sprungeantigen bundle fabricantigen-theme jreeseantigen-applysource /usr/local/bin/virtualenvwrapper.sh,v
+pattern,v
+source "$HOME/.antigen/antigen.zsh"antigen bundle gitantigen bundle pipantigen bundle rsyncantigen bundle pythonantigen bundle virtualenvwrapperantigen bundle nodeantigen bundle npmantigen bundle rakeantigen bundle rvmantigen bundle bundlerantigen bundle zsh-users/zsh-completions srcantigen bundle zsh-users/zsh-syntax-highlightingantigen bundle kennethreitz/autoenvantigen bundle command-not-foundantigen bundle historyantigen bundle tmuxantigen bundle vundleantigen bundle sprungeantigen bundle fabricantigen-theme jreeseantigen-apply,v
+antigen bundle robbyrussell/oh-my-zsh plugins/ruby,v
+i.name.replace(i.size, "").strip().strip("-"),v
+on_delete=models.SET_NULL,v
+SOHEL11102014.xls,v
+            Paragraph(G_STATUS, style=styles["tnormal"]),,V
+        if is_godown:            ser["lines"].append([            Paragraph(str(i), style=styles["tnormal"]),            Paragraph(str(format_quantity(line.quantity)) + " " + line.unit, style=styles["tnormal"]),            Paragraph(line.size if line.size else "", style=styles["tnormal"]),            Paragraph(line.product_name + " " + (line.brand if line.brand else ""), style=styles["tnormal"]),            Paragraph(G_STATUS, style=styles["tnormal"]),            line_height,            ]),v
+        if is_godown:            t = ScalaingTable(d, colWidths=['*', 2*cm, 2*cm, 5*cm, 1*cm],                    repeatRows=1),v
+            headers += Paragraph("<b>Godown</b>", style=styles["normal"]),,V
+            print "I WAS HERE HEADER",V
+        if is_godown:,V
+                Paragraph("<b>Item Name</b>", style=styles["normal"]),,V
+     headers = [                Paragraph("<b>S/L</b>", style=styles["normal"]),                Paragraph("<b>Quantity</b>", style=styles["normal"]),                Paragraph("<b>Size</b>", style=styles["normal"]),                Paragraph("<b>Item Name</b>", style=styles["normal"]),            ],v
+            Paragraph("<b>Item Name</b>", style=styles["normal"]),,V
+    ,v
+bill,v
+    return [],V
+    if contact:,V
+ #HttpResponse(simplejson.dumps([{"error": True}])),v
+ #HttpResponse(dumps),v
+    return [] #HttpResponse(simplejson.dumps([{"error": True}])),V
+        return dumps #HttpResponse(dumps),V
+                  "remaining": i.get_remaining()} for i in bills],V
+                  "total": i.get_total(),,V
+                  "serial": i.serial,,V
+                  "date": i.date.ctime(),,V
+        dumps = [{"pk": i.pk,,V
+        bills = contact.bill_set.filter(is_paid=True),V
+    if pk:,V
+def unpaid_bills(contact):,V
+from .views import unpaid_bills,V
+def unpaid_bills(contact):    if pk:        bills = contact.bill_set.filter(is_paid=True)        dumps = [{"pk": i.pk,                  "date": i.date.ctime(),                  "serial": i.serial,                  "total": i.get_total(),                  "remaining": i.get_remaining()} for i in bills]        return dumps #HttpResponse(dumps)    return [] #HttpResponse(simplejson.dumps([{"error": True}])),v
+        contact = Contact.objects.get(id=int(pk)),V
+    pk = request.GET.get("pk", None),v
+),v
+        'rest_framework.authentication.BasicAuthentication',,V
+    'DEFAULT_PERMISSION_CLASSES': (        'rest_framework.permissions.IsAuthenticated',    ),v
+         'rest_framework.renderers.BrowsableAPIRenderer',,V
+    'DEFAULT_AUTHENTICATION_CLASSES': (        'rest_framework.authentication.BasicAuthentication',        'rest_framework.authentication.SessionAuthentication',    ),v
+http://localhost:8000/xsale/api/billpayments/,v
+         'rest_framework.renderers.YAMLRenderer',,V
+         'rest_framework.renderers.XMLRenderer',,V
+routers.register(r'api/units', UnitViewSet),V
+class UnitViewSet(viewsets.ModelViewSet):    model = Unit    serialization_class = UnitSerializer    def get_queryset(self):        return Unit.objects.all(),v
+map <leader>nb :NERDTreeFromBookmark map <leader>nf :NERDTreeFind<cr>"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""",v
+        <img src="" alt="" />,V
+tr                    <td>{{ i.title }}</td>,V
+                    <td>{{ i.title }}</td>,v
+t,v
+a,v
+b,v
+>,v
+r,v
+d,v
+*,v
+5,v
+html:,V
+></html>,v
+  1  h    [No Name]                                                               .                            line 1  4u h-   [BufExplorer]                                                           .                            line 3  2       adminx.py                                                               ~/repos/django/edpan/notice  line 66  7u  -   ControlP                                                                .                            line 0  6 #h    plugins_config.vim                                                      vimrcs                       line 34  3  h    settings.py                                                             ~/repos/django/edpan/project line 166,V
+map <leader>j :PeepOpen<cr>,V
+"""""""""""""""""""""""""""""",V
+" => Peepopen,V
+runtime/sou,v
 https://mafinar_rashid_khan@bitbucket.org/mafinar_rashid_khan/edpan-new.git,v
 git remote add origin https://mafinar_rashid_khan@bitbucket.org/mafinar_rashid_khan/edpan-new.git,v
     url(r'^calendar/', include('django_bootstrap_calendar.urls')),,v
     <a data-toggle="modal"><i class="fa fa-arrow-circle-down"></i> {% trans "Export" %} PDF</a>,v
 data-toggle="modal" data-target="#export-modal-{{et.type}}",v
-<a data-toggle="modal" data-target="#export-modal-{{et.type}}"><i class="fa fa-arrow-circle-down"></i> {% trans "Export" %} {{et.name}}        </a>,v
-    date_hierarchy = 'created_at',,V
-    list_display = 'bill', 'amount_paid', 'method_of_payment',,V
-<ul class="well nav nav-pills nav-stacked nav-quickfilter hide-sm">   {% for spec in cl.quickfilter.filter_specs %}{{ spec|safe }}{% endfor %}</ul>,v
-,,v
-    exclude = 'created_by', 'updated_by',,V
-s,v
-#,v
-    show_detail_fields = ['name'],V
-                    Inline(Relationship),,V
-`,v
-        ),,V
-    relfield_style = 'fk-ajax',V
-    reversion_enable = True,V
-    show_detail_fields = 'name',,V
-    list_filter = 'bill_date',,V
-    exclude = 'created_by', 'updated_by',V
-    show_detail_fields = ['title'],V
-list_display_links = ['title'],v
-show_detail_fields = ['title'],v
-    list_display_links = ['title'],V
-    list_filter = 'bill_date',V
-    list_filter = 'bill_dat,V
-e',v
-    site_title = "EdPan",V
-    list_display = 'student', 'event', 'is_confirmed',V
-    list_display = 'title', 'start_date', 'end_date', 'category',,V
-class GlobalAdmin(object):    list_display = 'title', 'severity', 'notice_type',    search_fields = 'title', 'remarks',    list_filter = 'title', 'severity', 'notice_type', 'created_at'xadmin.site.register(Global, GlobalAdmin),v
-    list_filter = 'paid_on', 'last_date', 'status', 'bill_type', 'student',,V
-    list_filter = 'title', 'class_info', 'period_type', 'nationality',,V
-    list_display = 'date', 'class_info', 'period', 'teacher', 'room', 'course',,V
-    relfield_style = 'fk-ajax',v
-                             'office_address',,V
-                             'address',,V
-                             description="Basic access field, required",V
-    list_display = 'course', 'class_info', 'period', 'room',V
-import xadminfrom xadmin import viewsfrom models import *from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Sidefrom xadmin.plugins.inline import Inlinefrom xadmin.plugins.batch import BatchChangeAction,V
-    exclude = 'created_by', 'updated_by',v
-class StaffAdmin(object):    list_display = 'name', 'gender', 'designation', 'employee_id',    search_fields = 'name', 'email', 'designation', 'employee_id', 'phone', 'mobile',    list_filter = 'department', 'designation', 'gender', 'date_of_birth'    form_layout = (        Main(            TabHolder(                Tab('General Fields',                    Fieldset('Information',                             Row('name', 'username'),                             Row('gender', 'date_of_birth'),                             ),                    ),                Tab('Official Fields',                    Fieldset('Office Info'                             'department',                             'designation',                             'employee_id'),                    Fieldset('Contact details',                             Row('phone', 'mobile'),                             'address',                             ),                    ),            ),        ),        Side(            Fieldset('Additional Data',                     'email', 'photo', 'remarks'                     ),        )    )xadmin.site.register(Staff, StaffAdmin),v
-    form_layout = (        Main(            TabHolder(                Tab('General Fields',                    Fieldset('Information',                             'name', 'gender', 'username',                             description="Basic access field, required"                             ),                    ),                Tab('Extend Fields',                    Fieldset('Contact details',                             Row('phone', 'mobile'),                             'address',                             'office_address',                             ),                    ),            ),        ),        Side(            Fieldset('Additional Data',                     'email', 'photo', 'remarks'                     ),        )    ),V
-        verbose_name_plural = 'Ethnicities',V
-',v
-Inline,v
-                             'guarantee_date',V
-                                 'hard_disk', 'G'), AppendedText('memory', "G")),,V
-                             Row(AppendedText(,V
-                             'service_type',,V
-                             description="some comm fields, required",V
-                             Row('cpu', 'core_num'),,V
-                    Inline(MaintainLog),,V
-    form_layout = (        Main(            TabHolder(                Tab('Comm Fields',                    Fieldset('Company data',                             'name', 'idc',                             description="some comm fields, required"                             ),                    Inline(MaintainLog),                    ),                Tab('Extend Fields',                    Fieldset('Contact details',                             'service_type',                             Row('brand', 'model'),                             Row('cpu', 'core_num'),                             Row(AppendedText(                                 'hard_disk', 'G'), AppendedText('memory', "G")),                             'guarantee_date'                             ),                    ),            ),        ),        Side(            Fieldset('Status data',                     'status', 'ssh_port', 'ip'                     ),        )    ),v
-    list_filter = 'name',,V
-class EthnicityAdmin(object):,V
-class EthnicityAdmin(object):    list_display = 'name',    list_filter = 'name',    search_fields = 'name', 'description',,v
- ,v
-class BaseSetting(object):    enable_themes = False    use_bootswatch = Falsexadmin.site.register(views.BaseAdminView, BaseSetting)class GlobalSetting(object):    global_search_models = [Host, IDC, Employee]    global_models_icon = {        Host: 'fa fa-laptop', IDC: 'fa fa-cloud', Employee: 'fa fa-user',    }    menu_style = 'accordion'#'accordion'xadmin.site.register(views.CommAdminView, GlobalSetting),V
-IDC, Host, MaintainLog, HostGroup, AccessRecord, Employee,v
-import xadminfrom xadmin import viewsfrom xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Sidefrom xadmin.plugins.inline import Inlinefrom xadmin.plugins.batch import BatchChangeActionfrom .models import *class SchoolAdmin(object):    list_display = ('title', 'established_on', 'email', 'site')    list_display_links = ('title',)    wizard_form_list = [        ('General Info', ('title', 'established_on', 'site')),        ('Address', ('address', 'phone', 'mobile', 'email')),        ('Setup', ('billing_date', 'bill_payment_threshold'))    ]    reversion_enable = Truexadmin.site.register(School, SchoolAdmin)class RoomAdmin(object):    list_display = 'title', 'room_type',    list_filter = 'room_type',    search_fields = 'title', 'description',    reversion_enable = Truexadmin.site.register(Room, RoomAdmin)class PeriodAdmin(object):    list_display = 'title',' start_time', 'end_time'    list_filter = 'start_time', 'end_time'    search_fields = 'title', 'description',xadmin.site.register(Period, PeriodAdmin)class SemesterAdmin(object):    list_display = 'title', 'start_date', 'end_date'    list_filter = 'start_date', 'end_date'    search_fields = 'title', 'description',xadmin.site.register(Semester, SemesterAdmin)class ClassInfoAdmin(object):    list_display = 'title', 'category', 'section'    list_filter = 'category', 'section',    search_fields = 'title', 'description'xadmin.site.register(ClassInfo, ClassInfoAdmin)class CourseAdmin(object):    list_display = 'title', 'class_info',    list_filter = 'class_info',    search_fields = 'title', 'description', 'code'xadmin.site.register(Course, CourseAdmin),V
-from models import IDC, Host, MaintainLog, HostGroup, AccessRecord, Employee,V
-    ],V
-    batch_fields = ('contact', 'name'),V
-    actions = [BatchChangeAction, ],V
-    search_fields = [],V
-),v
-class IDCAdmin(object):    list_display = ('name', 'description', 'create_time')    list_display_links = ('name',)    wizard_form_list = [        ('First\'s Form', ('name', 'description')),        ('Second Form', ('contact', 'telphone', 'address')),        ('Thread Form', ('customer_id',))    ]    search_fields = ['name']    relfield_style = 'fk-ajax'    reversion_enable = True    actions = [BatchChangeAction, ]    batch_fields = ('contact', 'name'),V
-import xadminfrom xadmin import viewsfrom models import IDC, Host, MaintainLog, HostGroup, AccessRecord, Employeefrom xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Sidefrom xadmin.plugins.inline import Inlinefrom xadmin.plugins.batch import BatchChangeAction,V
-from django.db import modelsfrom django.utils.translation import ugettext_lazy as _from django.utils.timezone import nowfrom base.models import BaseModelclass Ethnicity(models.Model):    name = models.CharField(max_length=255)    description = models.TextField(blank=True, null=True)    def __unicode__(self):        return self.nameclass Nationality(models.Model):    name = models.CharField(max_length=255)    description = models.TextField(blank=True, null=True)    def __unicode__(self):        return self.nameclass Guardian(BaseModel):    """MODEL DOCUMENTATION"""    name = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Name'))    gender = models.CharField(        blank=True,        max_length=255,        null=True,        choices=(('Male', 'Male'), ('Female', 'Female')),        default='Male'    )    username = models.ForeignKey(        blank=True,        null=True,        to='auth.User',        verbose_name=_('Username'))    phone = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Phone'))    mobile = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Mobile'))    address = models.TextField(        blank=True,        null=True,        verbose_name=_('Address'))    office_address = models.TextField(        blank=True,        null=True,        verbose_name=_('Office address'))    email = models.EmailField(blank=True, null=True, verbose_name=_('Email'))    photo = models.ImageField(blank=True, null=True, upload_to='upload/', verbose_name=_('Photo'))    remarks = models.TextField(        blank=True,        null=True,        verbose_name=_('Remarks'))    def save(self, *args, **kwargs):        return super(Guardian, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.name)    def get_absolute_url(self):        return "/student/guardian/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['name']class Student(BaseModel):    """MODEL DOCUMENTATION"""    name = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Name'))    gender = models.CharField(        blank=True,        max_length=255,        null=True,        choices=(('Male', 'Male'), ('Female', 'Female')),        default='Male'    )    username = models.ForeignKey(        blank=True,        null=True,        to='auth.User',        verbose_name=_('Username'))    date_of_birth = models.DateField(blank=True, null=True)    height = models.IntegerField(blank=True, null=True)    weight = models.IntegerField(blank=True, null=True)    phone = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Phone'))    mobile = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Mobile'))    address = models.TextField(        blank=True,        null=True,        verbose_name=_('Address'))    email = models.EmailField(blank=True, null=True, verbose_name=_('Email'))    photo = models.ImageField(blank=True, null=True, upload_to='upload/', verbose_name=_('Photo'))    remarks = models.TextField(        blank=True,        null=True,        verbose_name=_('Remarks'))    enrolled_class = models.ForeignKey(        blank=True,        null=True,        to='setup.Classinfo',        verbose_name=_('Enrolled class'))    roll_number = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Roll number'))    ethnicity = models.ForeignKey(Ethnicity, blank=True, null=True)    nationality = models.ForeignKey(Nationality, blank=True, null=True)    admission_status = models.CharField(choices=(('0', 'Regular'),                                                 ('2', 'Test Failed'),                                                 ('3', 'Left School')),                                        max_length=255,                                        blank=True,                                        null=True)    def save(self, *args, **kwargs):        return super(Student, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.name)    def get_absolute_url(self):        return "/student/student/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['name']class Relationship(BaseModel):    """MODEL DOCUMENTATION"""    student = models.ForeignKey(        blank=True,        null=True,        to='student.Student',        verbose_name=_('Student'))    guardian = models.ForeignKey(        blank=True,        null=True,        to='student.Guardian',        verbose_name=_('Guardian'))    relation = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Relation'))    def save(self, *args, **kwargs):        return super(Relationship, self).save(*args, **kwargs)    def __unicode__(self):        return "[ Implement Me ]"    def get_absolute_url(self):        return "/student/relationship/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['-pk']class Service(BaseModel):    name = models.CharField(max_length=255)    description = models.TextField(blank=True, null=True)    def __unicode__(self):        return self.nameclass StudentService(BaseModel):    service = models.ForeignKey(Service)    student = models.ForeignKey(Student),v
-from django.db import modelsfrom django.utils.translation import ugettext_lazy as _from django.utils.timezone import nowfrom base.models import BaseModelclass Department(BaseModel):    """MODEL DOCUMENTATION"""    title = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Title'))    description = models.TextField(        blank=True,        null=True,        verbose_name=_('Description'))    def save(self, *args, **kwargs):        return super(Department, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.title)    def get_absolute_url(self):        return "/administration/department/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['title']class Staff(BaseModel):    """MODEL DOCUMENTATION"""    name = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Name'))    gender = models.CharField(        blank=True,        max_length=255,        null=True,        choices=(('Male', 'Male'), ('Female', 'Female')),        default='Male'    )    designation = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Designation'))    deparment = models.ForeignKey(        blank=True,        null=True,        to='administration.Department',        verbose_name=_('Deparment'))    employee_id = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Employee id'))    date_of_birth = models.DateField(verbose_name=_('Date of birth'),            blank=True, null=True)    picture = models.ImageField(upload_to='upload/',             blank=True, null=True, verbose_name=_('Picture'))    phone = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Phone'))    mobile = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Mobile'))    email = models.EmailField(blank=True, null=True, verbose_name=_('Email'))    address = models.TextField(        blank=True,        null=True,        verbose_name=_('Address'))    remarks = models.TextField(        blank=True,        null=True,        verbose_name=_('Remarks'))    username = models.ForeignKey(        blank=True,        null=True,        to='auth.User',        verbose_name=_('Username'))    def save(self, *args, **kwargs):        return super(Staff, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.name)    def get_absolute_url(self):        return "/administration/staff/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['name']class Teacher(BaseModel):    """MODEL DOCUMENTATION"""    name = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Name'))    gender = models.CharField(        blank=True,        max_length=255,        null=True,        choices=(('Male', 'Male'), ('Female', 'Female')),        default='Male'    )    designation = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Designation'))    deparment = models.ForeignKey(        blank=True,        null=True,        to='administration.Department',        verbose_name=_('Deparment'))    employee_id = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Employee id'))    date_of_birth = models.DateField(verbose_name=_('Date of birth'),            blank=True, null=True, )    picture = models.ImageField(upload_to='upload/',             blank=True, null=True, verbose_name=_('Picture'))    phone = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Phone'))    mobile = models.CharField(        blank=True,        max_length=255,        null=True,        verbose_name=_('Mobile'))    email = models.EmailField(blank=True, null=True, verbose_name=_('Email'))    address = models.TextField(        blank=True,        null=True,        verbose_name=_('Address'))    remarks = models.TextField(        blank=True,        null=True,        verbose_name=_('Remarks'))    username = models.ForeignKey(        blank=True,        null=True,        to='auth.User',        verbose_name=_('Username'))    def save(self, *args, **kwargs):        return super(Teacher, self).save(*args, **kwargs)    def __unicode__(self):        return "{}".format(self.name)    def get_absolute_url(self):        return "/administration/teacher/#/detail/{}".format(str(self.id))    class Meta:        ordering = ['name'],v
-31381137530481,v
-By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.What is the 10 001st prime number?,v
-(,v
-The prime factors of 13195 are 5, 7, 13 and 29.What is the largest prime factor of the number 600851475143 ?,v
-  (apply *' (range 1 (inc n)))),V
-  [n] ,V
-(defn factorial ,V
-(defn factorial   [n]   (apply *' (range 1 (inc n)))),v
-    (cons 2 (lazy-seq (next-primes {} 3))))),V
-                            (+ candidate 2))))))],V
-                (lazy-seq (next-primes (next-sieve sieve candidate),V
-              (cons candidate,V
-              (recur (next-sieve sieve candidate) (+ candidate 2)),V
-            (if (sieve candidate),V
-          (next-primes [sieve candidate],V
-              (enqueue sieve candidate (+ candidate candidate)))),V
-                (enqueue candidate step)),V
-                (dissoc candidate),V
-              (-> sieve,V
-            (if-let [step (sieve candidate)],V
-          (next-sieve [sieve candidate],V
-                (assoc sieve m step)))),V
-                (recur sieve m step),V
-              (if (sieve m),V
-            (let [m (+ n step)],V
-  (letfn [(enqueue [sieve n step],V
