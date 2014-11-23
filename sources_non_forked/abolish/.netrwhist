@@ -1,8 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/Madgenius/Codes/chrome/chrome-app-codelab'
 let g:netrw_dirhist_2='/Users/Madgenius/adt-bundle-mac-x86_64-20130917/sdk/tools'
 let g:netrw_dirhist_3='/Users/madgenius/codes/griffon/taskmate/USER_HOME'
 let g:netrw_dirhist_4='/Users/madgenius/.virtualenv/edpan/lib/python2.7/site-packages/registration'
 let g:netrw_dirhist_5='/Users/madgenius/repos/Spirit'
 let g:netrw_dirhist_6='/Users/madgenius/repos/Spirit/example'
+let g:netrw_dirhist_7='/Users/madgenius/repos/django_template/project_name'
+let g:netrw_dirhist_8='/Users/madgenius/repos/atf'
+let g:netrw_dirhist_9='/Users/madgenius/repos/simple-todos/.meteor'
