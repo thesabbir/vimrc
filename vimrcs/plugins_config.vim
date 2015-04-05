@@ -103,3 +103,9 @@ let g:airline_theme="luna"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:goyo_width=100
 nnoremap <silent> <leader>z :Goyo<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Paredit Mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:paredit_leader = ","
+let g:paredit_shortmap = 1
