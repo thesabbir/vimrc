@@ -18,7 +18,7 @@
 'g:pymode_options'	pymode.txt	/*'g:pymode_options'*
 'g:pymode_paths'	pymode.txt	/*'g:pymode_paths'*
 'g:pymode_python'	pymode.txt	/*'g:pymode_python'*
-'g:pymode_quickfix_maxheght'	pymode.txt	/*'g:pymode_quickfix_maxheght'*
+'g:pymode_quickfix_maxheight'	pymode.txt	/*'g:pymode_quickfix_maxheight'*
 'g:pymode_quickfix_minheight'	pymode.txt	/*'g:pymode_quickfix_minheight'*
 'g:pymode_rope'	pymode.txt	/*'g:pymode_rope'*
 'g:pymode_rope_autoimport'	pymode.txt	/*'g:pymode_rope_autoimport'*
@@ -34,8 +34,10 @@
 'g:pymode_rope_lookup_project'	pymode.txt	/*'g:pymode_rope_lookup_project'*
 'g:pymode_rope_module_to_package_bind'	pymode.txt	/*'g:pymode_rope_module_to_package_bind'*
 'g:pymode_rope_organize_imports_bind'	pymode.txt	/*'g:pymode_rope_organize_imports_bind'*
+'g:pymode_rope_project_root'	pymode.txt	/*'g:pymode_rope_project_root'*
 'g:pymode_rope_rename_bind'	pymode.txt	/*'g:pymode_rope_rename_bind'*
 'g:pymode_rope_rename_module_bind'	pymode.txt	/*'g:pymode_rope_rename_module_bind'*
+'g:pymode_rope_ropefolder'	pymode.txt	/*'g:pymode_rope_ropefolder'*
 'g:pymode_rope_show_doc_bind'	pymode.txt	/*'g:pymode_rope_show_doc_bind'*
 'g:pymode_run'	pymode.txt	/*'g:pymode_run'*
 'g:pymode_run_bind'	pymode.txt	/*'g:pymode_run_bind'*
@@ -55,7 +57,7 @@
 'g:pymode_syntax_slow_sync'	pymode.txt	/*'g:pymode_syntax_slow_sync'*
 'g:pymode_syntax_space_errors'	pymode.txt	/*'g:pymode_syntax_space_errors'*
 'g:pymode_syntax_string_format'	pymode.txt	/*'g:pymode_syntax_string_format'*
-'g:pymode_syntax_string_formating'	pymode.txt	/*'g:pymode_syntax_string_formating'*
+'g:pymode_syntax_string_formatting'	pymode.txt	/*'g:pymode_syntax_string_formatting'*
 'g:pymode_syntax_string_templates'	pymode.txt	/*'g:pymode_syntax_string_templates'*
 'g:pymode_trim_whitespaces'	pymode.txt	/*'g:pymode_trim_whitespaces'*
 'g:pymode_virtualenv'	pymode.txt	/*'g:pymode_virtualenv'*

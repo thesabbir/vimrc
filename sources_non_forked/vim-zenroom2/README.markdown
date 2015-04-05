@@ -7,6 +7,14 @@ zenroom for Vim: Focusing only on the essential](http://amix.dk/blog/post/19744#
 
 Please note that this might not work perfectly with your colorscheme. Patches are welcome to fix this :-)
 
+## Installation and usage
+
+* Install [goyo.vim](https://github.com/junegunn/goyo.vim)
+* In command mode type :Goyo
+
+Additionally you may want to have a shortcut. Add this to your vimrc:
+
+    nnoremap <silent> <leader>z :Goyo<cr>
 
 ## Inspirations/Similar
 * [Writing Markdown With Style in Vim](http://astrails.com/blog/2013/8/12/writing-markdown-with-style-in-vim)
@@ -15,7 +23,7 @@ Please note that this might not work perfectly with your colorscheme. Patches ar
 * [vim-zenroom](https://github.com/amix/vim-zenroom)
 
 
-## How it looks like in action
+## How it looks in action
 
 ![Screenshot 3](http://amix.dk/uploads/zenroom_documentation.jpg)
 

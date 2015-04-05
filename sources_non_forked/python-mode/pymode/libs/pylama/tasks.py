@@ -1,4 +1,5 @@
-""" Async code checking. """
+""" Support for asyncronious code checking. """
+
 import logging
 import threading
 from os import path as op
@@ -26,6 +27,7 @@ class Worker(threading.Thread):
     """ Get tasks from queue and run. """
 
     def __init__(self, path_queue, result_queue):
+        """ Init worker. """
         threading.Thread.__init__(self)
         self.path_queue = path_queue
         self.result_queue = result_queue
@@ -45,11 +47,10 @@ def async_check_files(paths, options, rootpath=None):
     :return list: list of errors
 
     """
-
     errors = []
 
     # Disable async if pylint enabled
-    async = options.async and not 'pylint' in options.linters
+    async = options.async and 'pylint' not in options.linters
 
     if not async:
         for path in paths:
@@ -79,22 +80,23 @@ def async_check_files(paths, options, rootpath=None):
     return errors
 
 
-def check_path(path, options=None, rootpath=None, code=None, **meta):
+def check_path(path, options=None, rootpath=None, code=None):
     """ Check path.
 
     :return list: list of errors
 
     """
-
     LOGGER.info("Parse file: %s", path)
 
     rootpath = rootpath or '.'
     errors = []
     for error in run(path, code, options):
         try:
-            error['rel'] = op.relpath(error['filename'], rootpath)
-            error['col'] = error.get('col', 1)
+            error._info['rel'] = op.relpath(error.filename, rootpath)
             errors.append(error)
         except KeyError:
             continue
+
     return errors
+
+# pylama:ignore=W0212

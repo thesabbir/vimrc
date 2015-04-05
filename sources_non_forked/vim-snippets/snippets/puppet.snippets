@@ -107,13 +107,21 @@ snippet if
 	if $${1:variable} {
 		${0}
 	}
+snippet ifd
+	if defined(${1:Resource}["${2:name}"]) {
+		${0}
+	}
+snippet ifnd
+	if !defined(${1:Resource}["${2:name}"]) {
+		${0}
+	}
 snippet el
 	else {
 		${0}
 	}
 snippet ?
 	? {
-		'${1}'	=> ${0}
+		"${1}"	=> ${0}
 	  }
 #
 # blocks etc and general syntax sugar
@@ -164,57 +172,57 @@ snippet warning
 #
 # Types
 snippet cron
-	cron{ "${1:name}":
-		command	=> "${2}",
-		user	=> "${3:root}",
-		${4}	=> ${0}
+	cron { "${1:name}":
+		command => "${2}",
+		user    => "${3:root}",
+		${4}    => ${0},
 	}
 
 snippet exec
-	exec{ "${1:name}":
-		command	=> "${2:$1}",
-		user	=> "${3:root}",
-		${4}	=> ${0}
+	exec { "${1:name}":
+		command => "${2:$1}",
+		user    => "${3:root}",
+		${4}    => ${0},
 	}
 
 snippet user
-	user{ "${1:user}":
-		comment		=> "${2:$1}",
-		ensure		=> present,
-		managehome	=> true,
-		home		=> "${0:/home/$1}"
+	user { "${1:user}":
+		ensure      => present,
+		comment     => "${2:$1}",
+		managehome  => true,
+		home        => "${0:/home/$1}",
 	}
 
 snippet group
-	group{ "${1:group}":
-		ensure	=> ${0:present}
+	group { "${1:group}":
+		ensure => ${0:present},
 	}
 
 snippet host
-	host{ "${1:hostname}":
-		ip	=> ${0:127.0.0.1}
+	host { "${1:hostname}":
+		ip => ${0:127.0.0.1},
 	}
 
 snippet mailalias
-	mailalias{ "${1:localpart}":
-		recipient	=> "${0:recipient}"
+	mailalias { "${1:localpart}":
+		recipient => "${0:recipient}",
 	}
 
 snippet mount
-	mount{ "${1:destination path}":
+	mount { "${1:destination path}":
 		ensure	=> ${2:mounted},
-		device	=> "${0:device name or path}"
+		device	=> "${0:device name or path}",
 	}
 
 snippet package
-	package{ "${1:package name}":
-		ensure	=> ${0:present}
+	package { "${1:package name}":
+		ensure	=> ${0:present},
 	}
 
 snippet yumrepo
-	yumrepo{ "${1:repo name}":
-		descr	=> "${2:$1}",
-		enabled	=> ${0:1}
+	yumrepo { "${1:repo name}":
+		Descr   => "${2:$1}",
+		enabled => ${0:1},
 	}
 
 snippet define
@@ -223,22 +231,39 @@ snippet define
 	}
 
 snippet service
-	service { '${1:service}' :
+	service { "${1:service}" :
 		ensure    => running,
 		enable    => true,
-		require   => [ Package['${2:package}'], File['${3:file}'], ],
-		subscribe => [ File['${4:configfile1}'], File['${5:configfile2}'], Package['${6:package}'], ]
+		require   => [ Package["${2:package}"], File["${3:file}"], ],
+		subscribe => [ File["${4:configfile1}"], File["${5:configfile2}"], Package["${6:package}"], ],
 	}
 
 snippet file
-	file { '${1:filename}' :
+	file { "${1:filename}" :
 		ensure  => ${2:present},
-		owner   => '${3:root}',
-		group   => '${4:root}',
-		mode    => '${5:0644}',
-		source  => 'puppet:///modules/${6:module}/${7:source}',
-		content => template('/etc/puppet/templates/${8:template}'),
-		alias   => '${9:alias}',
-		require => [ Package['${10:package}'], File['${11:file}'], ],
+		owner   => "${3:root}",
+		group   => "${4:root}",
+		mode    => "${5:0644}",
+		source  => "puppet:///modules/${6:module}/${7:source}",
+		content => template("${8:module}/${9:template}"),
+		alias   => "${10:alias}",
+		require => [ Package["${11:package}"], File["${12:file}"], ],
+	}
+
+snippet archive
+	archive { "${1:filename}" :
+		ensure     => ${2:present},
+		url        => "http://${3:url}",
+		extension  => "${4:tgz}",
+		target     => "${5:target}",
+		checksum   => ${6:false},
+		src_target => "${7:/tmp}",
+	}
+
+snippet firewall
+	firewall { "${1:comment}" :
+		proto	=> ${2:tcp},
+		action	=> ${3:accept},
+		port	=> ${4},
 	}
 

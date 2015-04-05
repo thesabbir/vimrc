@@ -97,7 +97,7 @@ class AstroidManager(OptionsProviderMixIn):
                 modname = '.'.join(modpath_from_file(filepath))
             except ImportError:
                 modname = filepath
-        if modname in self.astroid_cache:
+        if modname in self.astroid_cache and self.astroid_cache[modname].file == filepath:
             return self.astroid_cache[modname]
         if source:
             from astroid.builder import AstroidBuilder
@@ -272,6 +272,38 @@ class AstroidManager(OptionsProviderMixIn):
         substitute the original node in the tree.
         """
         self.transforms.setdefault(node_class, []).append( (transform, predicate) )
+
+    def unregister_transform(self, node_class, transform, predicate=None):
+        """Unregister the given transform."""
+        self.transforms[node_class].remove( (transform, predicate) )
+
+    def transform(self, node):
+        """Call matching transforms for the given node if any and return the
+        transformed node.
+        """
+        cls = node.__class__
+        if cls not in self.transforms:
+            # no transform registered for this class of node
+            return node
+
+        transforms = self.transforms[cls]
+        orig_node = node  # copy the reference
+        for transform_func, predicate in transforms:
+            if predicate is None or predicate(node):
+                ret = transform_func(node)
+                # if the transformation function returns something, it's
+                # expected to be a replacement for the node
+                if ret is not None:
+                    if node is not orig_node:
+                        # node has already be modified by some previous
+                        # transformation, warn about it
+                        warn('node %s substitued multiple times' % node)
+                    node = ret
+        return node
+
+    def cache_module(self, module):
+        """Cache a module if no module with the same name is known yet."""
+        self.astroid_cache.setdefault(module.name, module)
 
 
 class Project(object):

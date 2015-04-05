@@ -12,7 +12,6 @@ def code_check():
     :return bool:
 
     """
-
     with silence_stderr():
 
         from pylama.main import parse_options
@@ -25,7 +24,9 @@ def code_check():
             ignore=env.var('g:pymode_lint_ignore'),
             select=env.var('g:pymode_lint_select'),
             linters=env.var('g:pymode_lint_checkers'),
+            force=1,
         )
+        env.debug(options)
 
         path = os.path.relpath(env.curbuf.name, env.curdir)
         env.debug("Start code check: ", path)
@@ -56,6 +57,8 @@ def code_check():
         errors = sorted(errors, key=__sort)
 
     for e in errors:
-        e['bufnr'] = env.curbuf.number
+        e._info['bufnr'] = env.curbuf.number
 
-    env.run('g:PymodeLocList.current().extend', errors)
+    env.run('g:PymodeLocList.current().extend', [e._info for e in errors])
+
+# pylama:ignore=W0212

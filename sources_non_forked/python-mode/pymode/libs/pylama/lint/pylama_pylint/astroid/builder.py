@@ -44,6 +44,7 @@ if sys.version_info >= (3, 0):
     def open_source_file(filename):
         byte_stream = open(filename, 'bU')
         encoding = detect_encoding(byte_stream.readline)[0]
+        byte_stream.close()
         stream = open(filename, 'U', encoding=encoding)
         try:
             data = stream.read()
@@ -101,6 +102,12 @@ class AstroidBuilder(InspectBuilder):
             # this is a built-in module
             # get a partial representation by introspection
             node = self.inspect_build(module, modname=modname, path=path)
+            # we have to handle transformation by ourselves since the rebuilder
+            # isn't called for builtin nodes
+            #
+            # XXX it's then only called for Module nodes, not for underlying
+            # nodes
+            node = self._manager.transform(node)
         return node
 
     def file_build(self, path, modname=None):
@@ -124,16 +131,26 @@ class AstroidBuilder(InspectBuilder):
             except ImportError:
                 modname = splitext(basename(path))[0]
         # build astroid representation
-        node = self.string_build(data, modname, path)
-        node.file_encoding = encoding
-        return node
+        module = self._data_build(data, modname, path)
+        return self._post_build(module, encoding)
 
     def string_build(self, data, modname='', path=None):
         """build astroid from source code string and return rebuilded astroid"""
         module = self._data_build(data, modname, path)
-        self._manager.astroid_cache[module.name] = module
+        module.file_bytes = data.encode('utf-8')
+        return self._post_build(module, 'utf-8')
+
+    def _post_build(self, module, encoding):
+        """handles encoding and delayed nodes
+        after a module has been built
+        """
+        module.file_encoding = encoding
+        self._manager.cache_module(module)
         # post tree building steps after we stored the module in the cache:
         for from_node in module._from_nodes:
+            if from_node.modname == '__future__':
+                for symbol, _ in from_node.names:
+                    module.future_imports.add(symbol)
             self.add_from_names_to_locals(from_node)
         # handle delayed assattr nodes
         for delayed in module._delayed_assattr:

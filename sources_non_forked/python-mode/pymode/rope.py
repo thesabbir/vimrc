@@ -13,7 +13,7 @@ from rope.base.taskhandle import TaskHandle # noqa
 from rope.contrib import autoimport as rope_autoimport, codeassist, findit, generate # noqa
 from rope.refactor import ModuleToPackage, ImportOrganizer, rename, extract, inline, usefunction, move, change_signature, importutils # noqa
 
-
+from ._compat import StringIO
 from .environment import env
 
 
@@ -44,7 +44,6 @@ def completions():
     :return None:
 
     """
-
     row, col = env.cursor
     if env.var('a:findstart', True):
         count = 0
@@ -108,7 +107,6 @@ def get_proporsals(source, offset, base='', dot=False):
     :return str:
 
     """
-
     with RopeContext() as ctx:
 
         try:
@@ -139,7 +137,6 @@ def get_proporsals(source, offset, base='', dot=False):
 @env.catch_exceptions
 def goto():
     """ Goto definition. """
-
     with RopeContext() as ctx:
         source, offset = env.get_offset_params()
 
@@ -151,14 +148,14 @@ def goto():
             return
 
         env.goto_file(
-            found_resource.real_path, cmd=ctx.options.get('goto_definition_cmd'))
+            found_resource.real_path,
+            cmd=ctx.options.get('goto_definition_cmd'))
         env.goto_line(line)
 
 
 @env.catch_exceptions
 def show_doc():
     """ Show documentation. """
-
     with RopeContext() as ctx:
         source, offset = env.get_offset_params()
         try:
@@ -173,7 +170,6 @@ def show_doc():
 
 def find_it():
     """ Find occurrences. """
-
     with RopeContext() as ctx:
         _, offset = env.get_offset_params()
         try:
@@ -194,7 +190,6 @@ def find_it():
 
 def update_python_path(paths):
     """ Update sys.path and make sure the new items come first. """
-
     old_sys_path_items = list(sys.path)
 
     for path in paths:
@@ -212,7 +207,6 @@ def update_python_path(paths):
 
 def organize_imports():
     """ Organize imports in current file. """
-
     with RopeContext() as ctx:
         organizer = ImportOrganizer(ctx.project)
         changes = organizer.organize_imports(ctx.resource)
@@ -233,8 +227,16 @@ def regenerate():
 
 def new():
     """ Create a new project. """
-    root = env.var('input("Enter project root: ", getcwd())')
-    prj = project.Project(projectroot=root)
+    root = None
+    if env.var('a:0') != '0':
+        root = env.var('a:1')
+    else:
+        default = env.var('g:pymode_rope_project_root')
+        if not default:
+            default = env.var('getcwd()')
+        root = env.var('input("Enter project root: ", "%s")' % default)
+    ropefolder = env.var('g:pymode_rope_ropefolder')
+    prj = project.Project(projectroot=root, ropefolder=ropefolder)
     prj.close()
     env.message("Project is opened: %s" % root)
 
@@ -245,7 +247,6 @@ def undo():
     :return bool:
 
     """
-
     with RopeContext() as ctx:
         changes = ctx.project.history.tobe_undone
         if changes is None:
@@ -264,7 +265,6 @@ def redo():
     :return bool:
 
     """
-
     with RopeContext() as ctx:
         changes = ctx.project.history.tobe_redone
         if changes is None:
@@ -291,14 +291,23 @@ def cache_project(cls):
         if resources.get(path):
             return resources.get(path)
 
-        project_path = env.curdir
-        env.debug('Look ctx', project_path)
-        if env.var('g:pymode_rope_lookup_project', True):
-            project_path = look_ropeproject(project_path)
+        project_path = env.var('g:pymode_rope_project_root')
+        if not project_path:
+            project_path = env.curdir
+            env.debug('Look ctx', project_path)
+            if env.var('g:pymode_rope_lookup_project', True):
+                project_path = look_ropeproject(project_path)
 
-        ctx = projects.get(project_path)
+        if not os.path.exists(project_path):
+            env.error("Rope project root not exist: %s" % project_path)
+            ctx = None
+
+        else:
+            ctx = projects.get(project_path)
+
         if not ctx:
             projects[project_path] = ctx = cls(path, project_path)
+
         resources[path] = ctx
         return ctx
     return get_ctx
@@ -327,7 +336,8 @@ def autoimport():
             _insert_import(word, modules[0], ctx)
 
         else:
-            module = env.user_input_choices('Which module to import:', *modules)
+            module = env.user_input_choices(
+                'Which module to import:', *modules)
             _insert_import(word, module, ctx)
 
         return True
@@ -339,7 +349,7 @@ class RopeContext(object):
     """ A context manager to have a rope project context. """
 
     def __init__(self, path, project_path):
-
+        """ Init Rope context. """
         self.path = path
 
         self.project = project.Project(
@@ -369,6 +379,7 @@ class RopeContext(object):
         env.message('Init Rope project: %s' % project_path)
 
     def __enter__(self):
+        """ Enter to Rope ctx. """
         env.let('g:pymode_rope_current', self.project.root.real_path)
         self.project.validate(self.project.root)
         self.resource = libutils.path_to_resource(
@@ -383,12 +394,12 @@ class RopeContext(object):
         return self
 
     def __exit__(self, t, value, traceback):
+        """ Exit from Rope ctx. """
         if t is None:
             self.project.close()
 
     def generate_autoimport_cache(self):
         """ Update autoimport cache. """
-
         env.message('Regenerate autoimport cache.')
         modules = self.options.get('autoimport_modules', [])
 
@@ -398,9 +409,12 @@ class RopeContext(object):
                 importer.generate_modules_cache(modules)
             importer.project.sync()
 
+        sys.stdout, stdout_ = StringIO.StringIO(), sys.stdout
+        sys.stderr, stderr_ = StringIO.StringIO(), sys.stderr
         process = multiprocessing.Process(target=_update_cache, args=(
             self.importer, modules))
         process.start()
+        sys.stdout, sys.stderr = stdout_, stderr_
 
 
 class ProgressHandler(object):
@@ -408,6 +422,7 @@ class ProgressHandler(object):
     """ Handle task progress. """
 
     def __init__(self, msg):
+        """ Init progress handler. """
         self.handle = TaskHandle(name="refactoring_handle")
         self.handle.add_observer(self)
         self.message = msg
@@ -437,7 +452,6 @@ class Refactoring(object): # noqa
         :return bool:
 
         """
-
         with RopeContext() as ctx:
 
             if not ctx.resource:
@@ -479,7 +493,6 @@ class Refactoring(object): # noqa
     @staticmethod
     def get_refactor(ctx):
         """ Get refactor object. """
-
         raise NotImplementedError
 
     @staticmethod
@@ -489,7 +502,6 @@ class Refactoring(object): # noqa
         :return bool: True
 
         """
-
         return True
 
     @staticmethod
@@ -746,7 +758,7 @@ class ChangeSignatureRefactoring(Refactoring):
         olds = [arg[0] for arg in refactor.get_args()]
 
         changers = []
-        for arg in [a for a in olds if not a in args]:
+        for arg in [a for a in olds if a not in args]:
             changers.append(change_signature.ArgumentRemover(olds.index(arg)))
             olds.remove(arg)
 
@@ -927,3 +939,5 @@ def _insert_import(name, module, ctx):
     progress = ProgressHandler('Apply changes ...')
     ctx.project.do(changes, task_handle=progress.handle)
     reload_changes(changes)
+
+# pylama:ignore=W1401,E1120,D
