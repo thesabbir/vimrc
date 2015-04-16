@@ -23,6 +23,9 @@ nerdcommenter https://github.com/scrooloose/nerdcommenter
 nerdtree https://github.com/scrooloose/nerdtree
 nginx.vim https://github.com/vim-scripts/nginx.vim
 open_file_under_cursor.vim https://github.com/amix/open_file_under_cursor.vim
+php.vim https://github.com/StanAngeloff/php.vim
+phpcomplete-extended https://github.com/m2mdas/phpcomplete-extended
+phpcomplete-extended-laravel https://github.com/m2mdas/phpcomplete-extended-laravel
 python-mode https://github.com/klen/python-mode
 rainbow_parentheses.vim https://github.com/kien/rainbow_parentheses.vim
 rust.vim https://github.com/rust-lang/rust.vim
@@ -31,9 +34,11 @@ snipmate-snippets https://github.com/scrooloose/snipmate-snippets
 syntastic https://github.com/scrooloose/syntastic
 taglist.vim https://github.com/vim-scripts/taglist.vim
 tlib https://github.com/vim-scripts/tlib
+unite.vim https://github.com/Shougo/unite.vim
 vim-abolish https://github.com/tpope/vim-abolish
 vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils
 vim-airline https://github.com/bling/vim-airline
+vim-blade https://github.com/xsbeats/vim-blade
 vim-bundle-mako https://github.com/sophacles/vim-bundle-mako
 vim-clojure-conceal https://github.com/fwolanski/vim-clojure-conceal
 vim-clojure-highlight https://github.com/guns/vim-clojure-highlight
