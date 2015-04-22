@@ -34,6 +34,7 @@ snipmate-snippets https://github.com/scrooloose/snipmate-snippets
 syntastic https://github.com/scrooloose/syntastic
 taglist.vim https://github.com/vim-scripts/taglist.vim
 tlib https://github.com/vim-scripts/tlib
+typescript-vim https://github.com/leafgarland/typescript-vim
 unite.vim https://github.com/Shougo/unite.vim
 vim-abolish https://github.com/tpope/vim-abolish
 vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils

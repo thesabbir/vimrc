@@ -77,7 +77,6 @@ syntastic-quickstart	syntastic.txt	/*syntastic-quickstart*
 syntastic-recommended	syntastic.txt	/*syntastic-recommended*
 syntastic-shellslash	syntastic.txt	/*syntastic-shellslash*
 syntastic-statusline-flag	syntastic.txt	/*syntastic-statusline-flag*
-syntastic-vim-airline	syntastic.txt	/*syntastic-vim-airline*
 syntastic-vim-auto-save	syntastic.txt	/*syntastic-vim-auto-save*
 syntastic-vim-go	syntastic.txt	/*syntastic-vim-go*
 syntastic-vim-virtualenv	syntastic.txt	/*syntastic-vim-virtualenv*
