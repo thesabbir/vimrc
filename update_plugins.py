@@ -51,6 +51,7 @@ vim-expand-region https://github.com/terryma/vim-expand-region
 vim-eunuch https://github.com/tpope/vim-eunuch
 vim-fireplace https://github.com/tpope/vim-fireplace
 vim-fugitive https://github.com/tpope/vim-fugitive
+vim-gitgutter https://github.com/airblade/vim-gitgutter
 vim-hy https://github.com/hylang/vim-hy
 vim-indent-object https://github.com/michaeljsmith/vim-indent-object
 vim-javascript https://github.com/pangloss/vim-javascript

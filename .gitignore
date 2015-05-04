@@ -1,6 +1,5 @@
+.ropeproject/
 temp_dirs/
-sources_non_forked/ack.vim/.netrwhist
-sources_non_forked/yankring/doc/tags
-sources_non_forked/tlib/doc/tags
+sources_non_forked/
 my_configs.vim
 *.pyc
