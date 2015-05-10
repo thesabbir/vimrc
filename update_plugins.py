@@ -5,10 +5,10 @@ import requests
 
 from os import path
 
+requests.packages.urllib3.disable_warnings()
 
 #--- Globals ----------------------------------------------
 PLUGINS = """
-ack.vim https://github.com/mileszs/ack.vim
 bufexplorer https://github.com/corntrace/bufexplorer
 ctrlp.vim https://github.com/kien/ctrlp.vim
 delimitmate https://github.com/Raimondi/delimitMate
@@ -16,6 +16,7 @@ emmet-vim https://github.com/mattn/emmet-vim
 goyo.vim https://github.com/junegunn/goyo.vim
 gundo.vim https://github.com/sjl/gundo.vim
 jshint.vim https://github.com/wookiehangover/jshint.vim
+limelight.vim https://github.com/junegunn/limelight.vim
 matchit https://github.com/tmhedberg/matchit
 mayansmoke https://github.com/vim-scripts/mayansmoke
 mru https://github.com/yegappan/mru
@@ -56,7 +57,6 @@ vim-hy https://github.com/hylang/vim-hy
 vim-indent-object https://github.com/michaeljsmith/vim-indent-object
 vim-javascript https://github.com/pangloss/vim-javascript
 vim-jsbeautify https://github.com/maksimr/vim-jsbeautify
-vim-leiningen https://github.com/tpope/vim-leiningen
 vim-less https://github.com/groenewege/vim-less
 vim-markdown https://github.com/tpope/vim-markdown
 vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors
@@ -70,6 +70,7 @@ vim-surround https://github.com/tpope/vim-surround
 vim-zenroom2 https://github.com/amix/vim-zenroom2
 yankring.vim https://github.com/vim-scripts/YankRing.vim
 """.strip()
+
 
 GITHUB_ZIP = '%s/archive/master.zip'
 
