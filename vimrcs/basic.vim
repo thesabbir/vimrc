@@ -86,6 +86,9 @@ endif
 "Always show current position
 set ruler
 
+" Set Line Number
+set nu
+
 " Height of the command bar
 set cmdheight=1
 
@@ -136,7 +139,7 @@ set foldcolumn=1
 syntax enable 
 
 try
-    colorscheme torte
+    colorscheme desert
 catch
 endtry
 
