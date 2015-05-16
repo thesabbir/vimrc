@@ -3,7 +3,7 @@ import shutil
 import tempfile
 import requests
 
-from os import path
+from os import path , mkdirs
 
 requests.packages.urllib3.disable_warnings()
 
@@ -100,6 +100,12 @@ def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
 
     print 'Updated %s' % plugin_name
 
+def create_tempdirs():
+    """Creates temp_dirs & undodir"""
+    temp_dirs = path.join(path.dirname(__file__), 'temp_dirs', 'undodir')
+    if os.isdir(temp_dirs):
+        pass
+    makedirs(temp_dirs)
 
 if __name__ == '__main__':
     temp_directory = tempfile.mkdtemp()
@@ -110,5 +116,6 @@ if __name__ == '__main__':
             zip_path = GITHUB_ZIP % github_url
             download_extract_replace(name, zip_path,
             temp_directory, SOURCE_DIR)
+            create_tempdirs()
     finally:
         shutil.rmtree(temp_directory)
