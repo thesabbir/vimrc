@@ -3,7 +3,7 @@ import shutil
 import tempfile
 import requests
 
-from os import path , mkdirs
+from os import path, makedirs
 
 requests.packages.urllib3.disable_warnings()
 
@@ -103,9 +103,10 @@ def download_extract_replace(plugin_name, zip_path, temp_dir, source_dir):
 def create_tempdirs():
     """Creates temp_dirs & undodir"""
     temp_dirs = path.join(path.dirname(__file__), 'temp_dirs', 'undodir')
-    if os.isdir(temp_dirs):
+    if path.isdir(temp_dirs):
         pass
-    makedirs(temp_dirs)
+    else:
+        makedirs(temp_dirs)
 
 if __name__ == '__main__':
     temp_directory = tempfile.mkdtemp()
